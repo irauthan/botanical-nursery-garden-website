@@ -42,7 +42,7 @@ const PRODUCTS = [
     price: 240,
     originalPrice: 320,
     badge: "Stress Relief & Sleep",
-    image: "https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/english_lavender_plant.jpg",
     botanical: "Lavandula angustifolia",
     desc: "Known worldwide for its anxiety-reducing, calming aroma. Silvery foliage with fragrant purple flower spikes that promote peaceful sleep and relaxation.",
     stock: "Acclimatized",
@@ -56,7 +56,7 @@ const PRODUCTS = [
     price: 150,
     originalPrice: 200,
     badge: "Pure Organic Scent",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/damask_rose_plant.jpg",
     botanical: "Rosa damascena",
     desc: "Intensely perfumed pink mountain rose plant. Ideal for making pure organic rose water (Gulab Jal), gulkand, and aromatic garden walkways.",
     stock: "In Stock",
@@ -70,7 +70,7 @@ const PRODUCTS = [
     price: 210,
     originalPrice: 280,
     badge: "Exotic Perfume",
-    image: "https://images.unsplash.com/photo-1596726978434-2e21b212f716?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/gandharaj_cape_jasmine_plant.jpg",
     botanical: "Gardenia jasminoides",
     desc: "Large waxy white flowers with deep glossy evergreen foliage. Releases a rich, luxurious floral perfume that lingers across the garden.",
     stock: "Limited",
@@ -84,7 +84,7 @@ const PRODUCTS = [
     price: 260,
     originalPrice: 350,
     badge: "Rare Alpine Queen",
-    image: "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/himalayan_blue_poppy_plant.jpg",
     botanical: "Meconopsis betonicifolia",
     desc: "Fabled Queen of Himalayan Flora. Blooms with mesmerizing sky-blue silken petals in cool mountain air. Highly prized ornamental.",
     stock: "Seasonal Special",
@@ -116,7 +116,7 @@ const PRODUCTS = [
     price: 240,
     originalPrice: 320,
     badge: "High Yield & Sweet",
-    image: "https://images.unsplash.com/photo-1536511135896-18e38d011f04?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/thai_dwarf_guava_plant.jpg",
     botanical: "Psidium guajava (Thai Clone)",
     desc: "Early bearing grafted guava plant with crunchy, seedless/small-core sweet white pulp. Starts fruiting within 1 year.",
     stock: "In Stock",
@@ -158,7 +158,7 @@ const PRODUCTS = [
     price: 480,
     originalPrice: 600,
     badge: "Rare Mountain Stock",
-    image: "https://images.unsplash.com/photo-1568651316409-58b981f144d8?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/himalayan_walnut_sapling.jpg",
     botanical: "Juglans regia",
     desc: "Acclimatized mountain walnut sapling yielding soft-shell, brain-nourishing organic walnuts. Stately long-lived shade and nut tree.",
     stock: "Limited Stock",
@@ -172,7 +172,7 @@ const PRODUCTS = [
     price: 290,
     originalPrice: 380,
     badge: "Spring Blossom + Fruit",
-    image: "https://images.unsplash.com/photo-1629828874514-c1e5103f2150?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/pahari_peach_sapling.jpg",
     botanical: "Prunus persica",
     desc: "Double advantage: stunning pink cherry-like blossoms in February/March followed by delicious juicy red blush peaches in summer.",
     stock: "In Stock",
@@ -186,7 +186,7 @@ const PRODUCTS = [
     price: 230,
     originalPrice: 300,
     badge: "Nutrient Powerhouse",
-    image: "https://images.unsplash.com/photo-1541344999736-83eca872f241?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/pomegranate_plant.jpg",
     botanical: "Punica granatum",
     desc: "Grafted dwarf pomegranate plant producing deep red, soft-seeded sweet arils. Hardy, drought-tolerant, and rich in antioxidants.",
     stock: "In Stock",
@@ -246,7 +246,7 @@ const PRODUCTS = [
     price: 170,
     originalPrice: 240,
     badge: "Positive Energy & Desk",
-    image: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/lucky_jade_succulent_plant.jpg",
     botanical: "Crassula ovata",
     desc: "Charming fleshy round leaves resembling green jade coins. Perfect desktop companion to reduce digital eye strain and bring stress-free vibes.",
     stock: "In Stock",
@@ -278,7 +278,7 @@ const PRODUCTS = [
     price: 130,
     originalPrice: 180,
     badge: "Brain Tonic & Anti-Anxiety",
-    image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/brahmi_gotu_kola_plant.jpg",
     botanical: "Bacopa monnieri",
     desc: "Renowned rejuvenating herb for mental clarity, meditation focus, and cognitive tranquility. Fast-growing lush trailing medicinal ground cover.",
     stock: "Fresh & Healthy",
@@ -292,7 +292,7 @@ const PRODUCTS = [
     price: 180,
     originalPrice: 250,
     badge: "100% Pure Oxygen & Prana",
-    image: "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/panch_tulsi_holy_basil_plant.jpg",
     botanical: "Ocimum sanctum & tenuiflorum",
     desc: "Set of 3 consecrated Tulsi varieties. High ozone & oxygen emission, natural cough/cold remedy, and sacred botanical centerpiece for homes.",
     stock: "In Stock",
@@ -306,7 +306,7 @@ const PRODUCTS = [
     price: 120,
     originalPrice: 170,
     badge: "Skin, Detox & Healing",
-    image: "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/medicinal_aloe_vera_plant.jpg",
     botanical: "Aloe barbadensis miller",
     desc: "Plump, gel-filled organic Aloe Vera. Harvest pure cooling gel directly for skin sunburns, hair nutrition, and digestive detox smoothies.",
     stock: "In Stock",
@@ -320,7 +320,7 @@ const PRODUCTS = [
     price: 110,
     originalPrice: 160,
     badge: "Immunity Fortress",
-    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+    image: "img/plants/organic_giloy_vine_plant.jpg",
     botanical: "Tinospora cordifolia",
     desc: "Harvested from mother vines climbing mature Neem trees. The stem possesses double medicinal potency for boosting white blood cells and fighting chronic fevers.",
     stock: "Rooted Vine",
@@ -366,7 +366,7 @@ const PRODUCTS = [
     price: 180,
     originalPrice: 240,
     badge: "100% Bio-Humus",
-    image: "https://images.unsplash.com/photo-1585336261026-7f57a66f075d?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80",
     botanical: "Enriched Organic Earthworm Castings",
     desc: "Matured on leaf litter and indigenous cow dung from Uttarakhand gaushalas. Rich in beneficial mycorrhizae, fast-tracks root growth and flower blooming.",
     stock: "In Stock",
@@ -380,7 +380,7 @@ const PRODUCTS = [
     price: 210,
     originalPrice: 280,
     badge: "Organic Pest Shield",
-    image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80",
     botanical: "Azadirachta indica pure extract",
     desc: "Chemical-free deterrent against aphids, whiteflies, mealybugs, and leaf spot fungus. 100% safe for fruit plants, indoor plants, and pets.",
     stock: "In Stock",
@@ -417,7 +417,7 @@ function renderProductCatalog(categoryFilter = 'all', searchQuery = '') {
   if (filtered.length === 0) {
     grid.innerHTML = `
       <div class="empty-store-notice">
-        <div style="font-size:3rem; margin-bottom:12px;">🌱</div>
+        <div style="font-size:3rem; margin-bottom:12px;"><i class="fa-solid fa-seedling" style="color:#4ade80;"></i></div>
         <h3>No plants found for this search</h3>
         <p>Try searching for Night Queen, Money Plant, Mango, Rose, Tulsi, or choose another category.</p>
         <button class="btn btn-nature" onclick="resetStoreFilters()" style="margin-top:14px;">View All Plants</button>
@@ -437,7 +437,7 @@ function renderProductCatalog(categoryFilter = 'all', searchQuery = '') {
       <div class="product-body">
         <div class="product-meta">
           <span class="botanical-tag">${item.botanical}</span>
-          <span class="care-tag">☀️ ${item.sunlight}</span>
+          <span class="care-tag"><i class="fa-solid fa-sun"></i> ${item.sunlight}</span>
         </div>
         
         <h3 class="product-title">${item.name}</h3>
@@ -451,14 +451,14 @@ function renderProductCatalog(categoryFilter = 'all', searchQuery = '') {
           
           <div class="product-actions">
             <button class="btn-store-action btn-add-cart" onclick="addToCart('${item.id}')" title="Add to Garden Basket">
-              🛒 Add
+              <i class="fa-solid fa-cart-plus"></i> Add
             </button>
             <a href="https://wa.me/917451920608?text=${encodeURIComponent(`Hello Virendra Garden (+91 7451920608)! I want to order/inquire about: *${item.name}* (Price: ₹${item.price}, ID: ${item.id}). Is this live plant available for pickup/shipping?`)}" 
                target="_blank" 
                rel="noopener noreferrer" 
                class="btn-store-action btn-wa-buy" 
                title="Direct 1-Click WhatsApp Order">
-              💬 WhatsApp
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
             </a>
           </div>
         </div>
@@ -523,7 +523,7 @@ function addToCart(productId) {
 
   saveCart();
   updateCartUI();
-  showToastNotification(`🌿 Added "${product.name}" to your Garden Basket!`);
+  showToastNotification(`Added "${product.name}" to your Garden Basket!`);
 }
 
 function updateCartQuantity(productId, delta) {
@@ -593,7 +593,7 @@ function updateCartUI() {
               <button class="qty-btn" onclick="updateCartQuantity('${item.id}', -1)">−</button>
               <span class="qty-count">${item.quantity}</span>
               <button class="qty-btn" onclick="updateCartQuantity('${item.id}', 1)">+</button>
-              <button class="remove-btn" onclick="removeFromCart('${item.id}')" title="Remove plant">🗑️</button>
+              <button class="remove-btn" onclick="removeFromCart('${item.id}')" title="Remove plant"><i class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
         </div>
@@ -610,12 +610,12 @@ function updateCartUI() {
     } else {
       waCheckoutBtn.classList.remove('disabled');
       let orderLines = cart.map((i, idx) => `${idx + 1}. *${i.name}* (Qty: ${i.quantity}) - ₹${i.price * i.quantity}`).join('\n');
-      let message = `🌿 *VIRENDRA GARDEN - LIVE PLANT & NURSERY ORDER* 🌿\n\n` +
+      let message = `*VIRENDRA GARDEN - LIVE PLANT & NURSERY ORDER*\n\n` +
                     `Hello Virendra Garden (+91 7451920608), I would like to order the following live plants/saplings:\n\n` +
                     `${orderLines}\n\n` +
-                    `💰 *Total Estimated Value*: ₹${totalPrice}\n` +
-                    `📦 *Total Plants*: ${totalItems}\n\n` +
-                    `📍 Please confirm nursery availability, healthy pot packaging, and pickup/delivery options. Thank you!`;
+                    `*Total Estimated Value*: ₹${totalPrice}\n` +
+                    `*Total Plants*: ${totalItems}\n\n` +
+                    `Please confirm nursery availability, healthy pot packaging, and pickup/delivery options. Thank you!`;
       
       waCheckoutBtn.setAttribute('href', `https://wa.me/917451920608?text=${encodeURIComponent(message)}`);
     }

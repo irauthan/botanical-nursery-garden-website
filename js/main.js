@@ -32,7 +32,7 @@ function initMobileMenu() {
     menuBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = navLinks.classList.toggle('mobile-open');
-      menuBtn.innerHTML = isOpen ? '✕' : '☰';
+      menuBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
       menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
@@ -40,7 +40,7 @@ function initMobileMenu() {
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('mobile-open');
-        menuBtn.innerHTML = '☰';
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
         menuBtn.setAttribute('aria-expanded', 'false');
       });
     });
@@ -49,7 +49,7 @@ function initMobileMenu() {
     document.addEventListener('click', (e) => {
       if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
         navLinks.classList.remove('mobile-open');
-        menuBtn.innerHTML = '☰';
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
         menuBtn.setAttribute('aria-expanded', 'false');
       }
     });
@@ -58,7 +58,7 @@ function initMobileMenu() {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && navLinks.classList.contains('mobile-open')) {
         navLinks.classList.remove('mobile-open');
-        menuBtn.innerHTML = '☰';
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
         menuBtn.setAttribute('aria-expanded', 'false');
       }
     });
@@ -376,7 +376,7 @@ function initReviews() {
         starsSelect.forEach(s => s.classList.add('selected'));
       }
 
-      showToast("🌿 Review published successfully! Thank you for honoring our green sanctuary.");
+      showToast("Review published successfully! Thank you for honoring our green sanctuary.");
     });
   }
 }
@@ -384,14 +384,14 @@ function initReviews() {
 function renderReviews(reviews, container) {
   container.innerHTML = '';
   reviews.forEach(rev => {
-    const starStr = '★'.repeat(rev.rating) + '☆'.repeat(5 - rev.rating);
+    const starStr = '<i class="fa-solid fa-star"></i>'.repeat(rev.rating) + '<i class="fa-regular fa-star"></i>'.repeat(5 - rev.rating);
     const initial = rev.name ? rev.name.charAt(0).toUpperCase() : 'V';
 
     const card = document.createElement('div');
     card.className = 'review-card fade-in';
     card.innerHTML = `
       <div>
-        <div class="stars" style="margin-bottom: 8px;">${starStr}</div>
+        <div class="stars" style="margin-bottom: 8px; color: #fbbf24; display: flex; gap: 3px;">${starStr}</div>
         <p class="review-quote">“${escapeHtml(rev.comment)}”</p>
       </div>
       <div class="review-author-info">
@@ -419,12 +419,12 @@ function initFeedbackForm() {
     const type = document.getElementById('feedbackType')?.value || 'Inquiry';
 
     if (type.includes('Plant') || type.includes('Tree') || type.includes('Sapling') || type.includes('Adopt')) {
-      showToast(`🌱 Thank you ${escapeHtml(name)}! Your Plant a Tree request is confirmed. Generating your Green Guardian Certificate...`);
+      showToast(`Thank you ${escapeHtml(name)}! Your Plant a Tree request is confirmed. Generating your Green Guardian Certificate...`);
       setTimeout(() => {
         generateAndShowCertificate(name, "Heritage Fruit / Mango Tree");
       }, 900);
     } else {
-      showToast(`🌸 Thank you ${escapeHtml(name)}, your inquiry has been received!`);
+      showToast(`Thank you ${escapeHtml(name)}, your inquiry has been received!`);
     }
     form.reset();
   });
@@ -460,7 +460,7 @@ function initAmbientAudio() {
       startAmbientAudio();
       pill.classList.add('playing');
       pill.querySelector('.audio-label').textContent = 'Playing';
-      showToast('🍃 Enjoy the peaceful mountain breeze and birdsong of Virendra Garden.');
+      showToast('Enjoy the peaceful mountain breeze and birdsong of Virendra Garden.');
     }
     isAudioPlaying = !isAudioPlaying;
   });
@@ -575,27 +575,27 @@ function initSeasonTabs() {
    ========================================================================== */
 const ZONE_DATA = {
   mango: {
-    title: "🥭 Zone A: 100+ Heritage Mango Grove",
+    title: "Zone A: 100+ Heritage Mango Grove",
     desc: "40+ year mature organic mango trees providing a dense green walking canopy and sweet summer harvest.",
     tag: "Orchard Trail • Shaded Canopy"
   },
   walnut: {
-    title: "🌰 Zone B: Walnut (Akhrot) & Mountain Peach Hill",
+    title: "Zone B: Walnut (Akhrot) & Mountain Peach Hill",
     desc: "Himalayan walnut trees and sweet mountain peach orchard blooming with vibrant pink flowers in spring.",
     tag: "Highland Fruit Zone"
   },
   gazebo: {
-    title: "🧺 Zone C: Sunset Picnic Gazebo & Meditation Lawn",
+    title: "Zone C: Sunset Picnic Gazebo & Meditation Lawn",
     desc: "Spacious grassy lawn with wooden seating benches, panoramic valley sunset views and fresh mountain breezes.",
     tag: "Family Picnics & Relaxation"
   },
   herbal: {
-    title: "🍵 Zone D: Lemongrass & Botanical Nursery",
+    title: "Zone D: Lemongrass & Botanical Nursery",
     desc: "Aromatic lemongrass beds, medicinal flora, and floral biodiversity supporting mountain butterflies and bees.",
     tag: "Herbal Wellness & Aroma"
   },
   trails: {
-    title: "🚶‍♂️ Zone E: Paved Nature Walking Trails",
+    title: "Zone E: Paved Nature Walking Trails",
     desc: "Clean, flat and senior-citizen friendly stone-paved loop trail connecting all major orchard zones.",
     tag: "Easy Walking & Birdwatching"
   }
@@ -649,13 +649,13 @@ function initCertificateModal() {
       link.download = 'Virendra_Garden_Green_Guardian_Certificate.png';
       link.href = canvas.toDataURL('image/png');
       link.click();
-      showToast('📜 Certificate downloaded successfully!');
+      showToast('Certificate downloaded successfully!');
     });
   }
 
   if (shareBtn) {
     shareBtn.addEventListener('click', () => {
-      const text = encodeURIComponent('🌿 I just pledged/adopted a tree at Virendra Garden (Estd. 1985) in Uttarakhand! Join the green initiative.');
+      const text = encodeURIComponent('I just pledged/adopted a tree at Virendra Garden (Estd. 1985) in Uttarakhand! Join the green initiative.');
       window.open(`https://wa.me/?text=${text}`, '_blank');
     });
   }
@@ -687,12 +687,33 @@ function generateAndShowCertificate(name, treeType) {
   ctx.lineWidth = 2;
   ctx.strokeRect(46, 46, 1108, 708);
 
-  // 3. Corner Leaves
-  ctx.font = '36px sans-serif';
-  ctx.fillText('🌿', 60, 80);
-  ctx.fillText('🌿', 1100, 80);
-  ctx.fillText('🌱', 60, 720);
-  ctx.fillText('🌱', 1100, 720);
+  // 3. Elegant Gold Corner Flourishes
+  ctx.strokeStyle = '#f59e0b';
+  ctx.lineWidth = 3;
+  // Top-left
+  ctx.beginPath();
+  ctx.moveTo(60, 95);
+  ctx.lineTo(60, 60);
+  ctx.lineTo(95, 60);
+  ctx.stroke();
+  // Top-right
+  ctx.beginPath();
+  ctx.moveTo(1140, 95);
+  ctx.lineTo(1140, 60);
+  ctx.lineTo(1105, 60);
+  ctx.stroke();
+  // Bottom-left
+  ctx.beginPath();
+  ctx.moveTo(60, 705);
+  ctx.lineTo(60, 740);
+  ctx.lineTo(95, 740);
+  ctx.stroke();
+  // Bottom-right
+  ctx.beginPath();
+  ctx.moveTo(1140, 705);
+  ctx.lineTo(1140, 740);
+  ctx.lineTo(1105, 740);
+  ctx.stroke();
 
   // 4. Header Titles
   ctx.textAlign = 'center';
@@ -760,25 +781,33 @@ function generateAndShowCertificate(name, treeType) {
    ========================================================================== */
 const TRANSLATIONS = {
   en: {
-    heroTag: "🌱 In Loving Honor of Mr. Virendra Singh Gusain • Estd. 1985",
+    heroTag: "In Loving Honor of Mr. Virendra Singh Gusain • Estd. 1985",
     heroTitle: "A 40-Year Living Legacy of Nature",
     heroSub: "Established in 1985, a peaceful botanical sanctuary nurturing 100+ Mango trees, Walnut (Akhrot), Litchi, Peach (Aadu), Banana, Guava, Pomegranate, Jamun, Pear, Lemon Grass, and exotic Himalayan flowers.",
-    btnPlant: "🌱 Plant a Tree for Nature",
-    btnExplore: "📸 Explore Photo Gallery",
-    btnMaps: "📍 Visit on Google Maps"
+    btnPlant: "Plant a Tree for Nature",
+    btnExplore: "Explore Photo Gallery",
+    btnMaps: "Visit on Google Maps",
+    storeBadge: "Authenticated Orchard Nursery",
+    storeTitle: "Botanical Nursery & Live Plant Store",
+    storeLead: "Take a living piece of our 40-year botanical sanctuary home. Certified high-yield grafted fruit saplings, rare Himalayan blooms, organic seeds, and Ayurvedic plants cultivated with pure mountain spring water.",
+    cartLabel: "Basket"
   },
   hi: {
-    heroTag: "🌱 श्री वीरेंद्र सिंह गुसाईं जी की पावन स्मृति में • स्थापना 1985",
+    heroTag: "श्री वीरेंद्र सिंह गुसाईं जी की पावन स्मृति में • स्थापना 1985",
     heroTitle: "प्रकृति की 40 वर्षीय जीवित धरोहर",
     heroSub: "1985 से स्थापित एक शांत प्राकृतिक बॉटनिकल अभयारण्य, जहाँ 100+ आम के पेड़, अखरोट, आड़ू, लीची, केला, अमरूद, अनार, जामुन, नाशपाती, लेमनग्रास और हिमालयी फूल फल-फूल रहे हैं।",
-    btnPlant: "🌱 प्रकृति के लिए एक पेड़ लगाएं",
-    btnExplore: "📸 फोटो गैलरी देखें",
-    btnMaps: "📍 गूगल मैप्स पर देखें"
+    btnPlant: "प्रकृति के लिए एक पेड़ लगाएं",
+    btnExplore: "फोटो गैलरी देखें",
+    btnMaps: "गूगल मैप्स पर देखें",
+    storeBadge: "प्रमाणित बगीचा एवं पौधशाला",
+    storeTitle: "प्राकृतिक पौधशाला एवं सजीव पौधे स्टोर",
+    storeLead: "हमारे 40 वर्षों के अभयारण्य का एक जीवंत अंश अपने घर ले जाएं। प्रमाणित कलमी फलदार पौधे, दुर्लभ हिमालयी पुष्प, जैविक बीज एवं औषधीय पौधे।",
+    cartLabel: "टोकरी"
   }
 };
 
 function initLanguageSwitcher() {
-  const switchBtns = document.querySelectorAll('.lang-switch-btn');
+  const switchBtns = document.querySelectorAll('.lang-switch-btn, .lang-btn, #langToggleBtn');
   if (switchBtns.length === 0) return;
 
   let currentLang = localStorage.getItem('vg_lang') || 'en';
@@ -789,15 +818,15 @@ function initLanguageSwitcher() {
       currentLang = currentLang === 'en' ? 'hi' : 'en';
       localStorage.setItem('vg_lang', currentLang);
       applyLanguage(currentLang);
-      showToast(currentLang === 'hi' ? '🇮🇳 भाषा बदलकर हिन्दी कर दी गई है।' : '🌐 Language set to English.');
+      showToast(currentLang === 'hi' ? 'भाषा बदलकर हिन्दी कर दी गई है।' : 'Language set to English.');
     });
   });
 }
 
 function applyLanguage(lang) {
-  const switchBtns = document.querySelectorAll('.lang-switch-btn');
+  const switchBtns = document.querySelectorAll('.lang-switch-btn, .lang-btn, #langToggleBtn');
   switchBtns.forEach(btn => {
-    btn.innerHTML = lang === 'en' ? '🇮🇳 हिन्दी' : '🌐 English';
+    btn.innerHTML = lang === 'en' ? '<i class="fa-solid fa-language"></i> हिन्दी' : '<i class="fa-solid fa-globe"></i> English';
   });
 
   const t = TRANSLATIONS[lang] || TRANSLATIONS.en;
@@ -807,11 +836,22 @@ function applyLanguage(lang) {
   const btnPlant = document.querySelector('.hero-actions .btn-nature');
   const btnExplore = document.querySelector('.hero-actions .btn-primary');
 
-  if (heroBadge && t.heroTag) heroBadge.innerHTML = `<span>🌱</span> ${t.heroTag}`;
+  if (heroBadge && t.heroTag) heroBadge.innerHTML = `<i class="fa-solid fa-seedling"></i> ${t.heroTag}`;
   if (heroTitle && t.heroTitle) heroTitle.innerHTML = `${t.heroTitle} <br><span>Virendra Garden's</span>`;
   if (heroSub && t.heroSub) heroSub.innerHTML = t.heroSub;
-  if (btnPlant && t.btnPlant) btnPlant.innerHTML = t.btnPlant;
-  if (btnExplore && t.btnExplore) btnExplore.innerHTML = t.btnExplore;
+  if (btnPlant && t.btnPlant) btnPlant.innerHTML = `<i class="fa-solid fa-spa"></i> ${t.btnPlant}`;
+  if (btnExplore && t.btnExplore) btnExplore.innerHTML = `<i class="fa-solid fa-camera"></i> ${t.btnExplore}`;
+
+  // Store page dynamic translations
+  const storeBadge = document.querySelector('.store-hero .badge');
+  const storeTitle = document.querySelector('.store-hero .page-title');
+  const storeLead = document.querySelector('.store-hero .section-lead');
+  const cartLabel = document.querySelector('.nav-cart-btn .cart-label');
+
+  if (storeBadge && t.storeBadge) storeBadge.textContent = t.storeBadge;
+  if (storeTitle && t.storeTitle) storeTitle.textContent = t.storeTitle;
+  if (storeLead && t.storeLead) storeLead.textContent = t.storeLead;
+  if (cartLabel && t.cartLabel) cartLabel.textContent = t.cartLabel;
 }
 
 /* ==========================================================================
@@ -825,7 +865,7 @@ function showToast(message) {
     document.body.appendChild(toast);
   }
 
-  toast.innerHTML = `<span>🌱</span> <div>${message}</div>`;
+  toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #4ade80;"></i> <div>${message}</div>`;
   toast.classList.add('show');
 
   setTimeout(() => {

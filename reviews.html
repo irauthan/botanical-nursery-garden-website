@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visitor Reviews | Virendra Garden's (Estd. 1985)</title>
   <meta name="description" content="Read real reviews and testimonials from visitors of Virendra Garden's. Share your own picnic, fruit orchard, and tree planting experience.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,17 +15,17 @@
     <div class="container nav-wrapper">
       <!-- Left: Brand Logo -->
       <a href="index.html" class="brand-logo">
-        <span class="logo-icon">🌿</span>
+        <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
         <div class="brand-text">
           <span class="brand-title">Virendra Garden's</span>
-          <span class="brand-tagline">Visitor Reviews • Estd. 1985</span>
+          <span class="brand-tagline">Botanical Sanctuary • Estd. 1985</span>
         </div>
       </a>
 
       <!-- Middle: Navigation Links -->
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="store.html" class="nav-link">Plant Store & Nursery</a></li>
+        <li><a href="store.html" class="nav-link">Plant Store</a></li>
         <li><a href="index.html#experiencesSection" class="nav-link">Experiences</a></li>
         <li><a href="gallery.html" class="nav-link">Gallery</a></li>
         <li><a href="history.html" class="nav-link">History</a></li>
@@ -45,20 +46,20 @@
           <span class="audio-label">Sound</span>
         </button>
 
-        <button class="lang-switch-btn" aria-label="Toggle Language">🇮🇳 हिन्दी</button>
+        <button class="lang-switch-btn" aria-label="Toggle Language" title="Change Language"><i class="fa-solid fa-language"></i> हिंदी</button>
         
-        <a href="https://maps.app.goo.gl/ZvK2q6JAgAgWsp1eA" target="_blank" rel="noopener noreferrer" class="nav-btn-highlight">
-          📍 Directions
+        <a href="https://maps.app.goo.gl/ZvK2q6JAgAgWsp1eA" target="_blank" rel="noopener noreferrer" class="nav-btn-highlight" title="Navigate to Virendra Garden">
+          <i class="fa-solid fa-location-dot"></i> Directions
         </a>
 
-        <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
       </div>
     </div>
   </header>
 
   <main class="container" style="padding-top: 30px;">
     <div class="section-header">
-      <span class="section-badge">Visitor Experiences</span>
+      <span class="section-badge"><i class="fa-solid fa-comments"></i> Visitor Experiences</span>
       <h1 class="section-title">What Our Guests Say</h1>
       <p class="section-description">
         Read genuine stories from travelers, families, and nature enthusiasts who have explored our 40-year-old fruit groves and tranquil sanctuary.
@@ -70,12 +71,18 @@
       <div class="rating-score-box">
         <div class="score-huge">4.9</div>
         <div>
-          <div class="stars">★★★★★</div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
           <p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 4px;">Overall Rating from 150+ Visitors</p>
         </div>
       </div>
       <div>
-        <a href="#submitReviewSection" class="btn btn-primary">✍️ Leave Your Review</a>
+        <a href="#submitReviewSection" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Leave Your Review</a>
       </div>
     </div>
 
@@ -88,7 +95,7 @@
     <section class="section" id="submitReviewSection">
       <div class="form-box">
         <div class="section-header" style="margin-bottom: 20px;">
-          <span class="section-badge">Share Your Experience</span>
+          <span class="section-badge"><i class="fa-solid fa-feather"></i> Share Your Experience</span>
           <h2 class="section-title" style="font-size: 1.8rem;">Write a Review</h2>
           <p class="section-description">How was your time at Virendra Garden's? We deeply value your feedback!</p>
         </div>
@@ -97,11 +104,11 @@
           <div class="form-group">
             <label class="form-label">Your Rating</label>
             <div class="star-rating-select" id="starRatingSelect">
-              <span data-value="1" class="selected">★</span>
-              <span data-value="2" class="selected">★</span>
-              <span data-value="3" class="selected">★</span>
-              <span data-value="4" class="selected">★</span>
-              <span data-value="5" class="selected">★</span>
+              <span data-value="1" class="selected"><i class="fa-solid fa-star"></i></span>
+              <span data-value="2" class="selected"><i class="fa-solid fa-star"></i></span>
+              <span data-value="3" class="selected"><i class="fa-solid fa-star"></i></span>
+              <span data-value="4" class="selected"><i class="fa-solid fa-star"></i></span>
+              <span data-value="5" class="selected"><i class="fa-solid fa-star"></i></span>
             </div>
           </div>
 
@@ -116,7 +123,7 @@
           </div>
 
           <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 10px;">
-            🌿 Publish My Review
+            <i class="fa-solid fa-check"></i> Publish My Review
           </button>
         </form>
       </div>
@@ -128,7 +135,7 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="brand-logo">
-        <span class="logo-icon">🌿</span>
+        <span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
         <span class="brand-title" style="font-size: 1.3rem;">Virendra Garden's</span>
       </div>
       <ul class="footer-links">
@@ -142,7 +149,7 @@
         <li><a href="https://maps.app.goo.gl/ZvK2q6JAgAgWsp1eA" target="_blank" rel="noopener noreferrer">Location</a></li>
       </ul>
       <div class="footer-bottom">
-        © 1985–2025 Virendra Garden's • Honoring Mr. Virendra Singh Gusain | Built with 🌿 by Vivek RG
+        © 1985–2025 Virendra Garden's • Honoring Mr. Virendra Singh Gusain | Built with <i class="fa-solid fa-heart" style="color:#ef4444;"></i> by Vivek RG
       </div>
     </div>
   </footer>
@@ -161,27 +168,27 @@
   <!-- Bottom Floating Navigation -->
   <nav class="bottom-floating-nav">
     <a href="index.html" class="bottom-nav-item">
-      <span class="icon">🏠</span>
+      <span class="icon"><i class="fa-solid fa-house"></i></span>
       <span>Home</span>
     </a>
     <a href="store.html" class="bottom-nav-item">
-      <span class="icon">🛒</span>
+      <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span>
       <span>Store</span>
     </a>
     <a href="gallery.html" class="bottom-nav-item">
-      <span class="icon">🖼️</span>
+      <span class="icon"><i class="fa-solid fa-images"></i></span>
       <span>Gallery</span>
     </a>
     <a href="reviews.html" class="bottom-nav-item active">
-      <span class="icon">⭐</span>
+      <span class="icon"><i class="fa-solid fa-star"></i></span>
       <span>Reviews</span>
     </a>
     <a href="history.html" class="bottom-nav-item">
-      <span class="icon">📖</span>
+      <span class="icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
       <span>History</span>
     </a>
     <a href="feedback.html" class="bottom-nav-item">
-      <span class="icon">🌱</span>
+      <span class="icon"><i class="fa-solid fa-seedling"></i></span>
       <span>Eco-Pledge</span>
     </a>
   </nav>
