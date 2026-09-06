@@ -784,7 +784,7 @@ const TRANSLATIONS = {
     heroTag: "In Loving Honor of Mr. Virendra Singh Gusain • Estd. 1985",
     heroTitle: "A 40-Year Living Legacy of Nature",
     heroSub: "Established in 1985, a peaceful botanical sanctuary nurturing 100+ Mango trees, Walnut (Akhrot), Litchi, Peach (Aadu), Banana, Guava, Pomegranate, Jamun, Pear, Lemon Grass, and exotic Himalayan flowers.",
-    btnPlant: "Plant a Tree for Nature",
+    btnExperiences: "Explore Experiences",
     btnExplore: "Explore Photo Gallery",
     btnMaps: "Visit on Google Maps",
     storeBadge: "Authenticated Orchard Nursery",
@@ -796,7 +796,7 @@ const TRANSLATIONS = {
     heroTag: "श्री वीरेंद्र सिंह गुसाईं जी की पावन स्मृति में • स्थापना 1985",
     heroTitle: "प्रकृति की 40 वर्षीय जीवित धरोहर",
     heroSub: "1985 से स्थापित एक शांत प्राकृतिक बॉटनिकल अभयारण्य, जहाँ 100+ आम के पेड़, अखरोट, आड़ू, लीची, केला, अमरूद, अनार, जामुन, नाशपाती, लेमनग्रास और हिमालयी फूल फल-फूल रहे हैं।",
-    btnPlant: "प्रकृति के लिए एक पेड़ लगाएं",
+    btnExperiences: "अनुभव और उद्यान भ्रमण",
     btnExplore: "फोटो गैलरी देखें",
     btnMaps: "गूगल मैप्स पर देखें",
     storeBadge: "प्रमाणित बगीचा एवं पौधशाला",
@@ -833,14 +833,14 @@ function applyLanguage(lang) {
   const heroBadge = document.querySelector('.hero-badge');
   const heroTitle = document.querySelector('.hero-title');
   const heroSub = document.querySelector('.hero-subtitle');
-  const btnPlant = document.querySelector('.hero-actions .btn-nature');
-  const btnExplore = document.querySelector('.hero-actions .btn-primary');
+  const btnExperiences = document.querySelector('.hero-actions .btn-primary');
+  const btnExplore = document.querySelector('.hero-actions .btn-secondary');
 
   if (heroBadge && t.heroTag) heroBadge.innerHTML = `<i class="fa-solid fa-seedling"></i> ${t.heroTag}`;
   if (heroTitle && t.heroTitle) heroTitle.innerHTML = `${t.heroTitle} <br><span>Virendra Garden's</span>`;
   if (heroSub && t.heroSub) heroSub.innerHTML = t.heroSub;
-  if (btnPlant && t.btnPlant) btnPlant.innerHTML = `<i class="fa-solid fa-spa"></i> ${t.btnPlant}`;
-  if (btnExplore && t.btnExplore) btnExplore.innerHTML = `<i class="fa-solid fa-camera"></i> ${t.btnExplore}`;
+  if (btnExperiences && t.btnExperiences) btnExperiences.innerHTML = `<i class="fa-solid fa-compass"></i> ${t.btnExperiences}`;
+  if (btnExplore && t.btnExplore) btnExplore.innerHTML = `<i class="fa-solid fa-images"></i> ${t.btnExplore}`;
 
   // Store page dynamic translations
   const storeBadge = document.querySelector('.store-hero .badge');
